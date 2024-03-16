@@ -1,3 +1,2 @@
-/kubejs/probe/**/*
-/kubejs/probe/*
 /.vscode/*
+jsconfig.json
