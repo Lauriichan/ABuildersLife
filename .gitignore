@@ -1,3 +1,5 @@
 modpack-description.txt
 modpack-command.txt
 *.mrpack
+instance.json
+/.vscode/
