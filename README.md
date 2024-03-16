@@ -133,6 +133,7 @@ A Builders' Life provides basically everything a survival player needs to build 
 - KubeJS ([Modrinth](https://modrinth.com/mod/kubejs) / [CurseForge](https://www.curseforge.com/minecraft/mc-mods/kubejs))
 - LambDynamicLights ([Modrinth](https://modrinth.com/mod/lambdynamiclights))
 - LazyDFU ([Modrinth](https://modrinth.com/mod/lazydfu))
+- Leaves Be Gone ([Modrinth](https://modrinth.com/mod/leaves-be-gone))
 - Legendary Tooltips ([Modrinth](https://modrinth.com/mod/legendary-tooltips))
 - LibZ ([Modrinth](https://modrinth.com/mod/libz))
 - Lithium ([Modrinth](https://modrinth.com/mod/lithium))
