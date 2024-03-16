@@ -1,4 +1,5 @@
 ServerEvents.recipes(event => {
+    // Add portal core crafting
     event.shaped('1x abuilderslife:portal_core', [
         'RDR',
         'EGE',
