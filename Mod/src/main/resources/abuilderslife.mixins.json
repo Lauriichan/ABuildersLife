@@ -1,0 +1,15 @@
+{
+	"required": true,
+	"package": "me.lauriichan.minecraft.fabric.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+	   "common.itemalchemy.EMCManagerMixin",
+	   "common.itemalchemy.ItemAlchemyCommandMixin",
+	   "common.itemalchemy.TagKeyMixin"
+	],
+	"client": [],
+    "server": [],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

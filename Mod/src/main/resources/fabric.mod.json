@@ -1,0 +1,32 @@
+{
+	"schemaVersion": 1,
+	"id": "abuilderslife",
+	"version": "${version}",
+	"name": "ABuildersLife",
+	"description": "A mod that patches other mods for the A Builders' Life modpack",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://github.com/Lauriichan/ABuildersLife",
+		"sources": "https://github.com/Lauriichan/ABuildersLife/Mod"
+	},
+	"license": "MIT",
+	"icon": "assets/abuilderslife/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"me.lauriichan.minecraft.fabric.ABuildersLife"
+		]
+	},
+	"mixins": [
+		"abuilderslife.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"accessWidener": "abuilderslife.accesswidener"
+}
