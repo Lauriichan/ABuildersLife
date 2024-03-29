@@ -3,9 +3,11 @@
 	"package": "me.lauriichan.minecraft.fabric.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
+	   "common.itemalchemy.EMCDefMixin",
 	   "common.itemalchemy.EMCManagerMixin",
-	   "common.itemalchemy.ItemAlchemyCommandMixin",
-	   "common.itemalchemy.TagKeyMixin"
+	   "common.itemalchemy.TagKeyMixin",
+	   "common.abuilderslife.CommandContextMixin",
+       "common.abuilderslife.CommandNodeMixin"
 	],
 	"client": [],
     "server": [],

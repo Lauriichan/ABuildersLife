@@ -1,3 +1,8 @@
 accessWidener v2 named
 
 accessible field net/minecraft/item/ItemGroups displayContext Lnet/minecraft/item/ItemGroup$DisplayContext;
+
+accessible field net/minecraft/command/argument/ItemStringReader result Lcom/mojang/datafixers/util/Either;
+accessible method net/minecraft/command/argument/ItemStringReader readTag ()V
+accessible method net/minecraft/command/argument/ItemStringReader readItem ()V
+accessible method net/minecraft/command/argument/ItemStringReader <init> (Lnet/minecraft/registry/RegistryWrapper;Lcom/mojang/brigadier/StringReader;Z)V

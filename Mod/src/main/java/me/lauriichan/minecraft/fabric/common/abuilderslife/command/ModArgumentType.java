@@ -1,4 +1,4 @@
-package me.lauriichan.minecraft.fabric.common.abuilderslife;
+package me.lauriichan.minecraft.fabric.common.abuilderslife.command;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -15,7 +15,7 @@ import net.minecraft.command.CommandSource;
 
 public final class ModArgumentType implements ArgumentType<ModContainer> {
 
-    public static final ModArgumentType INSTANCE = new ModArgumentType();
+    public static final ModArgumentType MOD = new ModArgumentType();
 
     public static <S> ModContainer getMod(CommandContext<S> context, String name) {
         return context.getArgument(name, ModContainer.class);
