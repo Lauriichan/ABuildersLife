@@ -27,8 +27,7 @@ public final class ABFLiteralCommand extends LiteralCommand {
 
     @Override
     public void init(CommandSettings settings) {
-        settings.permissionLevel(2);
-
+        settings.permissionLevel(4);
         addArgumentCommand("emc", new LiteralCommand() {
             @Override
             public void execute(ServerCommandEvent event) {
@@ -43,12 +42,17 @@ public final class ABFLiteralCommand extends LiteralCommand {
 
             @Override
             public void init(CommandSettings settings) {
+                settings.permissionLevel(4);
                 addArgumentCommand("clear", new LiteralCommand() {
                     @Override
                     public void execute(ServerCommandEvent event) {
                         EMCManager.getMap().clear();
                         EMCManager.config.configMap.clear();
                         event.sendSuccess(TextUtil.literal("[ItemAlchemy (ABL)] Successfully cleared EMC"), false);
+                    }
+                    @Override
+                    public void init(CommandSettings settings) {
+                        settings.permissionLevel(4);
                     }
                 });
                 addArgumentCommand("save", new LiteralCommand() {
@@ -62,6 +66,10 @@ public final class ABFLiteralCommand extends LiteralCommand {
                             event.sendFailure(TextUtil.literal("[ItemAlchemy (ABL)] Failed to save EMC"));
                         }
                     }
+                    @Override
+                    public void init(CommandSettings settings) {
+                        settings.permissionLevel(4);
+                    }
                 });
                 addArgumentCommand("remap", new LiteralCommand() {
                     @Override
@@ -69,6 +77,10 @@ public final class ABFLiteralCommand extends LiteralCommand {
                         event.sendSuccess(TextUtil.literal("[ItemAlchemy (ABL)] Remapping emc..."), false);
                         EMCManagerAdditions.remapEmcManager(event.getWorld());
                         event.sendSuccess(TextUtil.literal("[ItemAlchemy (ABL)] Successfully remapped emc."), false);
+                    }
+                    @Override
+                    public void init(CommandSettings settings) {
+                        settings.permissionLevel(4);
                     }
                 });
                 addArgumentCommand("update", new LiteralCommand() {
@@ -85,6 +97,10 @@ public final class ABFLiteralCommand extends LiteralCommand {
                         }
                         event.sendSuccess(TextUtil.literal("[ItemAlchemy (ABL)] Successfully updated EMC for all players"), false);
                     }
+                    @Override
+                    public void init(CommandSettings settings) {
+                        settings.permissionLevel(4);
+                    }
                 });
                 addArgumentCommand("set", new LiteralCommand() {
                     @Override
@@ -94,6 +110,7 @@ public final class ABFLiteralCommand extends LiteralCommand {
 
                     @Override
                     public void init(CommandSettings settings) {
+                        settings.permissionLevel(4);
                         addArgumentCommand(new ItemArrayCommand() {
                             @Override
                             public void execute(ServerCommandEvent event) {
@@ -108,6 +125,7 @@ public final class ABFLiteralCommand extends LiteralCommand {
 
                             @Override
                             public void init(CommandSettings settings) {
+                                settings.permissionLevel(4);
                                 addArgumentCommand(new LongCommand() {
                                     @Override
                                     public void execute(ServerCommandEvent event) {
@@ -115,6 +133,10 @@ public final class ABFLiteralCommand extends LiteralCommand {
                                         long emc = LongArgumentType.getLong(event.getContext(), getArgumentName());
                                         EMCManagerAdditions.setEMC(items, emc);
                                         event.sendSuccess(TextUtil.literal("[ItemAlchemy (ABL)] Successfully set EMC to " + emc), false);
+                                    }
+                                    @Override
+                                    public void init(CommandSettings settings) {
+                                        settings.permissionLevel(4);
                                     }
 
                                     @Override
@@ -134,12 +156,17 @@ public final class ABFLiteralCommand extends LiteralCommand {
 
                     @Override
                     public void init(CommandSettings settings) {
+                        settings.permissionLevel(4);
                         addArgumentCommand(new ItemArrayCommand() {
                             @Override
                             public void execute(ServerCommandEvent event) {
                                 Item[] items = ItemArrayArgumentType.getItemArray(event.getContext(), getArgumentName());
                                 EMCManagerAdditions.removeEMC(items);
                                 event.sendSuccess(TextUtil.literal("[ItemAlchemy (ABL)] Successfully removed EMC"), false);
+                            }
+                            @Override
+                            public void init(CommandSettings settings) {
+                                settings.permissionLevel(4);
                             }
 
                             @Override
@@ -157,6 +184,7 @@ public final class ABFLiteralCommand extends LiteralCommand {
 
                     @Override
                     public void init(CommandSettings settings) {
+                        settings.permissionLevel(4);
                         addArgumentCommand("mod", new ModCommand() {
                             @Override
                             public void execute(ServerCommandEvent event) {
@@ -164,6 +192,10 @@ public final class ABFLiteralCommand extends LiteralCommand {
                                 Registries.ITEM.getIds().stream().filter(id -> container.getMetadata().getId().equals(id.getNamespace()))
                                     .map(Identifier::toString).forEach(EMCManagerAdditions::removeEMC);
                                 event.sendSuccess(TextUtil.literal("[ItemAlchemy (ABL)] Successfully removed EMC"), false);
+                            }
+                            @Override
+                            public void init(CommandSettings settings) {
+                                settings.permissionLevel(4);
                             }
 
                             @Override
@@ -187,6 +219,7 @@ public final class ABFLiteralCommand extends LiteralCommand {
             }
 
             public void init(CommandSettings settings) {
+                settings.permissionLevel(4);
                 addArgumentCommand("savefile", new LiteralCommand() {
                     @Override
                     public void execute(ServerCommandEvent event) {
@@ -195,6 +228,10 @@ public final class ABFLiteralCommand extends LiteralCommand {
                         } else {
                             event.sendFailure(TextUtil.literal("[ItemAlchemy (ABL)] Failed to save EMC definitions"));
                         }
+                    }
+                    @Override
+                    public void init(CommandSettings settings) {
+                        settings.permissionLevel(4);
                     }
                 });
                 addArgumentCommand("loadfile", new LiteralCommand() {
@@ -206,12 +243,20 @@ public final class ABFLiteralCommand extends LiteralCommand {
                             event.sendFailure(TextUtil.literal("[ItemAlchemy (ABL)] Failed to load EMC definitions"));
                         }
                     }
+                    @Override
+                    public void init(CommandSettings settings) {
+                        settings.permissionLevel(4);
+                    }
                 });
                 addArgumentCommand("savemanager", new LiteralCommand() {
                     @Override
                     public void execute(ServerCommandEvent event) {
                         EMCDefinitionManager.saveFromManager();
                         event.sendSuccess(TextUtil.literal("[ItemAlchemy (ABL)] Successfully save EMC Manager to EMC definitions"), false);
+                    }
+                    @Override
+                    public void init(CommandSettings settings) {
+                        settings.permissionLevel(4);
                     }
                 });
                 addArgumentCommand("loadmanager", new LiteralCommand() {
@@ -221,12 +266,20 @@ public final class ABFLiteralCommand extends LiteralCommand {
                         event.sendSuccess(TextUtil.literal("[ItemAlchemy (ABL)] Successfully loaded EMC definitions to EMC Manager"),
                             false);
                     }
+                    @Override
+                    public void init(CommandSettings settings) {
+                        settings.permissionLevel(4);
+                    }
                 });
                 addArgumentCommand("clear", new LiteralCommand() {
                     @Override
                     public void execute(ServerCommandEvent event) {
                         EMCDefinitionManager.clear();
                         event.sendSuccess(TextUtil.literal("[ItemAlchemy (ABL)] Successfully cleared EMC definitions"), false);
+                    }
+                    @Override
+                    public void init(CommandSettings settings) {
+                        settings.permissionLevel(4);
                     }
                 });
             }
