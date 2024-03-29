@@ -1,4 +1,4 @@
-# A Builders' Life v1.2.0 (MC: 1.20.1)
+# A Builders' Life v1.2.1 (MC: 1.20.1)
 A Builders' Life provides basically everything a survival player needs to build amazing structures. With thousands of new building and decorative blocks. It also contains a AppliedEnergistics as a storage mod and Create with some addons for light automation. It's also possible to automate getting ores without destroying the world thanks to GrowableOres. Speaking about plants, there are also many new crops and food options to play around with. Lastly the world generation has been overhauled to look absolutely amazing.
 ## Mods
 - 3D Skin Layers ([Modrinth](https://modrinth.com/mod/3dskinlayers)) [1.6.2]
