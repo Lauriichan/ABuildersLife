@@ -1,4 +1,4 @@
-# A Builders' Life v1.3.1 (MC: 1.20.1)
+# A Builders' Life v1.4.0 (MC: 1.20.1)
 A Builders' Life provides basically everything a survival player needs to build amazing structures. With thousands of new building and decorative blocks. It also contains a AppliedEnergistics as a storage mod and Create with some addons for light automation. It's also possible to automate getting ores without destroying the world thanks to GrowableOres. Speaking about plants, there are also many new crops and food options to play around with. Lastly the world generation has been overhauled to look absolutely amazing.
 ## Mods
 - 3D Skin Layers ([Modrinth](https://modrinth.com/mod/3dskinlayers)) [1.6.2]
@@ -33,6 +33,7 @@ A Builders' Life provides basically everything a survival player needs to build 
 - Botany Pots ([Modrinth](https://modrinth.com/mod/botany-pots)) [13.0.26]
 - Botany Trees ([Modrinth](https://modrinth.com/mod/botany-trees)) [9.0.11]
 - Botarium ([Modrinth](https://modrinth.com/mod/botarium)) [2.3.3]
+- Bridging Mod ([Modrinth](https://modrinth.com/mod/bridging-mod)) [2.3.0+1.20.1.fabric]
 - Camera Utils ([Modrinth](https://modrinth.com/mod/camera-utils)) [fabric-1.20.1-1.0.9]
 - CameraOverhaul ([Modrinth](https://modrinth.com/mod/cameraoverhaul)) [1.4.0-fabric-universal]
 - Cave Dust ([Modrinth](https://modrinth.com/mod/cave-dust)) [1.4.1]
@@ -81,6 +82,7 @@ A Builders' Life provides basically everything a survival player needs to build 
 - Diagonal Walls ([Modrinth](https://modrinth.com/mod/diagonal-walls)) [v8.0.3-1.20.1-Fabric]
 - Diagonal Windows ([Modrinth](https://modrinth.com/mod/diagonal-windows)) [v8.1.4-1.20.1-Fabric]
 - Disable Custom Worlds Advice ([Modrinth](https://modrinth.com/mod/dcwa)) [4.1]
+- Dramatic Doors ([Modrinth](https://modrinth.com/mod/dramatic-doors)) [1.20.1-3.2.1]
 - Durability Plus ([Modrinth](https://modrinth.com/mod/durability-plus)) [1.0.3]
 - Easy Anvils ([Modrinth](https://modrinth.com/mod/easy-anvils)) [v8.0.2-1.20.1-Fabric]
 - Easy Magic ([Modrinth](https://modrinth.com/mod/easy-magic)) [v8.0.1-1.20.1-Fabric]
@@ -157,7 +159,6 @@ A Builders' Life provides basically everything a survival player needs to build 
 - Modern Dynamics ([Modrinth](https://modrinth.com/mod/modern-dynamics)) [0.7.0-beta]
 - Moonlight Lib ([Modrinth](https://modrinth.com/mod/moonlight)) [fabric_1.20-2.11.9]
 - More Banner Features ([Modrinth](https://modrinth.com/mod/more-banner-features)) [1.2.0]
-- More Chests ([Modrinth](https://modrinth.com/mod/more-chests)) [2.0.0+1.20.1]
 - More Chests Variants (MCV) ([Modrinth](https://modrinth.com/mod/more-chest-variants-lieonlion)) [1.5.0]
 - More Crafting Tables (MCT) ([Modrinth](https://modrinth.com/mod/more-crafting-tables-lieonlion)) [1.2.2+1.20.4-Fabric]
 - More Mob Variants ([Modrinth](https://modrinth.com/mod/more-mob-variants)) [1.2.2]
