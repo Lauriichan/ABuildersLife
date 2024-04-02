@@ -3,6 +3,7 @@ package me.lauriichan.minecraft.fabric.common.abuilderslife;
 import java.util.function.Supplier;
 
 import it.unimi.dsi.fastutil.objects.ObjectArrayList;
+import me.lauriichan.minecraft.fabric.ABuildersLife;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -57,6 +58,9 @@ public class CreativeTab {
     }
 
     public void add(Item item) {
+        if (item == null) {
+            return;
+        }
         itemDefs.add(item);
     }
 
@@ -77,7 +81,12 @@ public class CreativeTab {
 
     private void buildDisplayItems(ItemGroup.DisplayContext parameters, ItemGroup.Entries output) {
         for (Item itemDef : itemDefs) {
-            output.add(itemDef);
+            try {
+                output.add(itemDef);
+            } catch(IllegalArgumentException iae) {
+                // Something is wrong here?
+                ABuildersLife.LOGGER.debug("Failed to add item '" + Registries.ITEM.getId(itemDef) + "'", iae);
+            }
         }
     }
 
